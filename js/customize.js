@@ -15,6 +15,19 @@ $(function () {
       }
     });
 
+  $('.single_meeting')
+    .find('.title')
+    .each(function (i) {
+      if ($(this).text().length > meetingtheme_len) {
+        $(this).attr('title', $(this).text());
+        var text =
+          $(this)
+            .text()
+            .substring(0, meetingtheme_len - 1) + '...';
+        $(this).text(text);
+      }
+    });
+
   $('.meetingslider').slick({
     dots: false,
     autoplay: true,
