@@ -103,16 +103,17 @@ a.more {
     }
     .title {
       color: $primaryColor;
-      font-size: 5.5em;
-      padding: 60px 30px 50px;
+      font-size: 5.8em;
+      padding: 60px 50px 50px;
       line-height: 1.5em;
       font-weight: bolder;
     }
     .time {
-      font-size: 4.5em;
+      font-size: 5em;
       line-height: 1.5em;
       font-weight: bolder;
       padding: 30px 30px 50px;
+      letter-spacing: 2px;
 
       span {
         display: block;
