@@ -3,7 +3,7 @@
 $(function () {
   var meetingtheme_len = 30; // 超過100個字以"..."取代
   $('.meetingblock')
-    .find('td>a')
+    .find('td.theme')
     .each(function (i) {
       if ($(this).text().length > meetingtheme_len) {
         $(this).attr('title', $(this).text());
@@ -32,7 +32,7 @@ $(function () {
     dots: false,
     autoplay: true,
     infinite: true,
-    speed: 1000,
+    speed: 2000,
     autoplaySpeed: 6000,
     arrows: false,
     // fade: true,

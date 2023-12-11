@@ -8837,10 +8837,32 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
   font-weight: 500;
   border-bottom: 2px solid #dccaa4;
 }
+.meetingblock table th.thtime {
+  width: 10%;
+}
+.meetingblock table th.place {
+  width: 450px;
+}
+.meetingblock table th.theme {
+  width: 50%;
+}
+.meetingblock table th.time {
+  width: 20%;
+}
 .meetingblock table td {
-  padding: 1.5em 0.8em;
+  padding: 1.3em 0.8em;
   border: none;
   border-bottom: 2px solid #dccaa4;
+}
+.meetingblock table td.place span {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 450px;
+}
+.meetingblock table td.theme {
+  color: #896936;
 }
 
 .meetingblock2 {
@@ -8851,11 +8873,12 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
 }
 .meetingblock2 .single_meeting .place {
   font-size: 3.5em;
-  padding: 70px 30px;
+  padding: 60px 50px;
   background-color: #896936;
   color: #fff;
   border-radius: 15px 15px 0 0;
   letter-spacing: 2px;
+  line-height: 1.6em;
 }
 .meetingblock2 .single_meeting .title {
   color: #896936;
@@ -8868,7 +8891,7 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
   font-size: 5em;
   line-height: 1.5em;
   font-weight: bolder;
-  padding: 30px 30px 50px;
+  padding: 30px 50px 50px;
   letter-spacing: 2px;
 }
 .meetingblock2 .single_meeting .time span {
@@ -8876,7 +8899,8 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
 }
 .meetingblock2 .single_meeting .organizer {
   font-size: 3em;
-  padding: 30px;
+  padding: 30px 50px;
+  line-height: 1.5em;
 }
 
 h1.title,

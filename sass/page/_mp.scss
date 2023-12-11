@@ -77,13 +77,33 @@ a.more {
       border: none;
       font-weight: 500;
       border-bottom: 2px solid darken($lightColor, 8);
-      &.lefttime {
+      &.thtime {
+        width: 10%;
+      }
+      &.place {
+        width: 450px;
+      }
+      &.theme {
+        width: 50%;
+      }
+      &.time {
+        width: 20%;
       }
     }
     td {
-      padding: 1.5em 0.8em;
+      padding: 1.3em 0.8em;
       border: none;
       border-bottom: 2px solid darken($lightColor, 8);
+      &.place {
+        span {
+          display: block;
+          @include text-overflow;
+          width: 450px;
+        }
+      }
+      &.theme {
+        color: $primaryColor;
+      }
     }
   }
 }
@@ -95,11 +115,12 @@ a.more {
     text-align: center;
     .place {
       font-size: 3.5em;
-      padding: 70px 30px;
+      padding: 60px 50px;
       background-color: $primaryColor;
       color: #fff;
       border-radius: 15px 15px 0 0;
       letter-spacing: 2px;
+      line-height: 1.6em;
     }
     .title {
       color: $primaryColor;
@@ -112,7 +133,7 @@ a.more {
       font-size: 5em;
       line-height: 1.5em;
       font-weight: bolder;
-      padding: 30px 30px 50px;
+      padding: 30px 50px 50px;
       letter-spacing: 2px;
 
       span {
@@ -121,7 +142,8 @@ a.more {
     }
     .organizer {
       font-size: 3em;
-      padding: 30px;
+      padding: 30px 50px;
+      line-height: 1.5em;
     }
   }
 }
